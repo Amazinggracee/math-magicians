@@ -15,53 +15,26 @@ function Calculator() {
     // to be implemented in the next project
   };
 
-  const handleAddClick = () => {
-    // to be implemented in the next project
-  };
-
-  const handleClearAllClick = () => {
-    // to be implemented in the next project
-  };
-
-  const handleNegativeClick = () => {
-    // to be implemented in the next project
-  };
-
-  const handleDivisionClick = () => {
-    // to be implemented in the next project
-  };
-  const handlePercentClick = () => {
-    // to be implemented in the next project
-  };
-
-  const handleMultiplyClick = () => {
-    // to be implemented in the next project
-  };
-
-  const handleMinusClick = () => {
-    // to be implemented in the next project
-  };
-
   return (
     <div className="calculator">
       <div className="calculator-display">{displayValue}</div>
       <div className="calculator-keypad">
         <div className="calculator-keypad-row">
-          <button type="button" onClick={handleClearAllClick}>
+          <button type="button" onClick={() => handleNumberClick('AC')}>
             AC
           </button>
-          <button type="button" onClick={handleNegativeClick}>
+          <button type="button" onClick={() => handleNumberClick('+/-')}>
             +/-
           </button>
-          <button type="button" onClick={handlePercentClick}>
+          <button type="button" onClick={() => handleNumberClick('%')}>
             %
           </button>
           <button
             className="btn-color"
             type="button"
-            onClick={handleDivisionClick}
+            onClick={() => handleNumberClick('÷')}
           >
-            /
+            ÷
           </button>
         </div>
         <div className="calculator-keypad-row">
@@ -77,7 +50,7 @@ function Calculator() {
           <button
             className="btn-color"
             type="button"
-            onClick={handleMultiplyClick}
+            onClick={() => handleNumberClick('x')}
           >
             x
           </button>
@@ -95,7 +68,7 @@ function Calculator() {
           <button
             className="btn-color"
             type="button"
-            onClick={handleMinusClick}
+            onClick={() => handleNumberClick('-')}
           >
             -
           </button>
@@ -110,7 +83,11 @@ function Calculator() {
           <button type="button" onClick={() => handleNumberClick(3)}>
             3
           </button>
-          <button className="btn-color" type="button" onClick={handleAddClick}>
+          <button
+            className="btn-color"
+            type="button"
+            onClick={() => handleNumberClick('+')}
+          >
             +
           </button>
         </div>
