@@ -52,7 +52,7 @@
 <!-- LIVE DEMO AND THE DEPLOY -->
 
 ## 🚀 Live Demo and video <a name="live-demo"></a>
-https://amazinggracee.github.io/math-magicians/
+https://amazinggracee.github.io/math-magicians/public
 
 - [Click Here]()
 
