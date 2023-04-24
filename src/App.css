@@ -26,7 +26,7 @@
   text-align: right;
   color: #fff;
   background-color: #adada9;
-  padding: 10px;
+  padding: 1px;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -38,13 +38,12 @@
 .calculator-keypad button {
   font-size: 21px;
   background-color: transparent;
-  border-radius: 5px;
-  padding: 10px;
   margin: 5px;
   cursor: pointer;
   width: 65px;
   height: 39px;
-  border: 1px solid lavenderblush;
+  border: none;
+  border-right: 1px solid #d1cfcf;
 }
 
 .calculator-keypad button:hover {
@@ -58,4 +57,5 @@
 .calculator-keypad-row {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #d1cfcf;
 }
