@@ -10,13 +10,12 @@
   --paragraph-color: rgb(0, 0, 0);
   --white-color: rgba(255, 255, 255, 1);
   --main-font: "Roboto", sans-serif;
-  --item-color: rgba(177, 173, 182, 0.5);
+  --item-color: rgba(217, 214, 221, 0.5);
   --pop-bg: rgb(51, 48, 48);
 }
 
 .calculator {
-  background-color: transparent;
-  padding: 20px;
+  background-color: var(--item-color);
   width: 340px;
   margin: auto;
 }
@@ -27,6 +26,7 @@
   color: #fff;
   background-color: #adada9;
   padding: 1px;
+  margin-top: 20%;
 }
 
 .calculator-keypad .btn-color {
@@ -44,7 +44,7 @@
 }
 
 .calculator-keypad #zero {
-  width: 600px;
+  width: 671px;
 }
 
 .calculator-keypad button:hover {
