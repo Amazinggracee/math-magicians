@@ -38,7 +38,6 @@
 .calculator-keypad button {
   font-size: 21px;
   background-color: transparent;
-  margin: 5px;
   cursor: pointer;
   width: 65px;
   height: 39px;
