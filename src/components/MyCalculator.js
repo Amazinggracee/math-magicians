@@ -92,7 +92,7 @@ function Calculator() {
           </button>
         </div>
         <div className="calculator-keypad-row">
-          <button type="button" onClick={() => handleNumberClick(0)}>
+          <button id="zero" type="button" onClick={() => handleNumberClick(0)}>
             0
           </button>
           <button type="button" onClick={handleClearClick}>

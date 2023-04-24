@@ -27,8 +27,6 @@
   color: #fff;
   background-color: #adada9;
   padding: 1px;
-  border-radius: 5px;
-  margin-bottom: 10px;
 }
 
 .calculator-keypad .btn-color {
@@ -43,6 +41,10 @@
   height: 40px;
   border: none;
   border-right: 1px solid #d1cfcf;
+}
+
+.calculator-keypad #zero {
+  width: 600px;
 }
 
 .calculator-keypad button:hover {
