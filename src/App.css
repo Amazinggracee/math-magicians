@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -65,4 +65,160 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #d1cfcf;
+} */
+
+h1 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  justify-content: center;
 }
+
+.wrapper {
+  padding: 80px 10px;
+  background: rgba(85, 85, 85, 0.466);
+  height: 60vh;
+  padding-bottom: 20rem;
+} 
+
+/* For calculator */
+.btn_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  width: 370px;
+  gap: 0;
+  padding: 0;
+  margin: auto;
+  justify-content: center;
+}
+
+.calculator-page {
+  display: flex;
+}
+
+.display {
+  grid-column: 1/5;
+  text-align: right;
+  font-size: 30px;
+  background: #858694;
+  cursor: pointer;
+  padding: 10px;
+  height: 40px;
+}
+
+.ac,
+.four,
+.eigth,
+.twelve {
+  grid-column: 1/2;
+  background-color: #e0e0e0;
+}
+
+.one,
+.five,
+.nine,
+.thirteen {
+  grid-column: 2/3;
+  background-color: #e0e0e0;
+}
+
+.two,
+.six,
+.ten,
+.fourteen,
+.eighteen {
+  grid-column: 3/4;
+  background-color: #e0e0e0;
+}
+
+.tree,
+.seven,
+.eleven,
+.fifteen,
+.nineteen {
+  grid-column: 4/5;
+  background-color: #ffa600;
+}
+
+.seventeen {
+  grid-column: 1/3;
+  background-color: #e0e0e0;
+}
+
+.btn {
+  text-align: center;
+  padding: 40px;
+  cursor: pointer;
+  border: 0.3px solid rgb(197, 194, 194);
+  margin-top: -18px;
+}
+
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: rgba(18, 118, 129, 1);
+  --secondary-color: rgba(16, 55, 92, 1);
+  --paragraph-color: rgb(0, 0, 0);
+  --white-color: rgba(255, 255, 255, 1);
+  --main-font: "Roboto", sans-serif;
+  --item-color: rgba(217, 214, 221, 0.5);
+  --pop-bg: rgb(51, 48, 48);
+}
+
+#navSection {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.calculator {
+  background-color: var(--item-color);
+  width: 340px;
+  margin: auto;
+}
+
+.calculator-display {
+  font-size: 2em;
+  text-align: right;
+  color: #fff;
+  background-color: #adada9;
+  padding: 1px;
+  margin-top: 20%;
+}
+
+.calculator-keypad .btn-color {
+  background: #ffa600;
+}
+
+.calculator-keypad button {
+  font-size: 21px;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-right: 1px solid #d1cfcf;
+}
+
+.calculator-keypad #zero {
+  width: 681px;
+}
+
+.calculator-keypad button:hover {
+  background-color: #ddd;
+}
+
+.calculator-keypad button:active {
+  background-color: #ccc;
+}
+
+.calculator-keypad-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d1cfcf;
+} */

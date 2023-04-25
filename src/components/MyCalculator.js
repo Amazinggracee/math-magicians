@@ -1,62 +1,85 @@
-/* eslint-disable quotes */
 import React, { useState } from 'react';
-import Buttons from './Button';
+import '../App.css';
+import calculate from '../logic/Calculate';
+import Navigation from './Nav';
 
-function Calculator() {
-  const [displayValue, setDisplayValue] = useState('0');
-
-  const handleClearClick = () => {
-    setDisplayValue('0');
+const Calculator = () => {
+  const [state, setState] = useState({ total: 0, next: null, operation: null });
+  const operateEvents = (e) => {
+    const btnName = e.target.innerHTML;
+    const result = calculate(state, btnName);
+    setState(result);
   };
-
-  const handleEqualsClick = () => {
-    // to be implemented in the next project
-  };
-
+  const { total, operation, next } = state;
   return (
-    <div className="calculator">
-      <div className="calculator-display">{displayValue}</div>
-      <div className="calculator-keypad">
-        <div className="calculator-keypad-row">
-          <Buttons title="AC" />
-          <Buttons title="+/-" />
-          <Buttons title="%" />
-          <Buttons cname="btn-color" title="÷" />
+    <section className="calculator">
+      <Navigation />
+      <div className="btn_wrapper">
+        <div className="display">
+          {total}
+          {operation}
+          {next}
         </div>
-        <div className="calculator-keypad-row">
-          <Buttons title="7" />
-          <Buttons title="8" />
-          <Buttons title="9" />
-          <Buttons cname="btn-color" title="X" />
-        </div>
-        <div className="calculator-keypad-row">
-          <Buttons title="4" />
-          <Buttons title="5" />
-          <Buttons title="6" />
-          <Buttons cname="btn-color" title="-" />
-        </div>
-        <div className="calculator-keypad-row">
-          <Buttons title="1" />
-          <Buttons title="2" />
-          <Buttons title="3" />
-          <Buttons cname="btn-color" title="+" />
-        </div>
-        <div className="calculator-keypad-row">
-          <Buttons title="0" />
-          <button id="zero" type="button" onClick={handleClearClick}>
-            C
-          </button>
-          <button
-            className="btn-color"
-            type="submit"
-            onClick={handleEqualsClick}
-          >
-            =
-          </button>
-        </div>
+        <button type="button" className="ac btn" onClick={operateEvents}>
+          AC
+        </button>
+        <button type="button" className="one btn" onClick={operateEvents}>
+          +/-
+        </button>
+        <button type="button" className="two btn" onClick={operateEvents}>
+          %
+        </button>
+        <button type="button" className="tree btn" onClick={operateEvents}>
+          ÷
+        </button>
+        <button type="button" className="four btn" onClick={operateEvents}>
+          7
+        </button>
+        <button type="button" className="five btn" onClick={operateEvents}>
+          8
+        </button>
+        <button type="button" className="six btn" onClick={operateEvents}>
+          9
+        </button>
+        <button type="button" className="seven btn" onClick={operateEvents}>
+          x
+        </button>
+        <button type="button" className="eigth btn" onClick={operateEvents}>
+          4
+        </button>
+        <button type="button" className="nine btn" onClick={operateEvents}>
+          5
+        </button>
+        <button type="button" className="ten btn" onClick={operateEvents}>
+          6
+        </button>
+        <button type="button" className="eleven btn" onClick={operateEvents}>
+          -
+        </button>
+        <button type="button" className="twelve btn" onClick={operateEvents}>
+          1
+        </button>
+        <button type="button" className="thirteen btn" onClick={operateEvents}>
+          2
+        </button>
+        <button type="button" className="fourteen btn" onClick={operateEvents}>
+          3
+        </button>
+        <button type="button" className="fifteen btn" onClick={operateEvents}>
+          +
+        </button>
+        <button type="button" className="seventeen btn" onClick={operateEvents}>
+          0
+        </button>
+        <button type="button" className="eighteen btn" onClick={operateEvents}>
+          .
+        </button>
+        <button type="button" className="nineteen btn" onClick={operateEvents}>
+          =
+        </button>
       </div>
-    </div>
+    </section>
   );
-}
+};
 
 export default Calculator;
