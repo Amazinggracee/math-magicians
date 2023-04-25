@@ -24,17 +24,20 @@
 # 📖 [math-magicians] <a name="about-project"></a>
 
 **[math-magicians]** This is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+- Make simple calculations.
+- Read a random math-related quote
+## Learning objectives <a name="objectives"></a>
 
+- Set up a React app.
+- Use React documentation.
 - Make simple calculations.
 - Read a random math-related quote.
 - Use React components.
 - Use React props.
 - Use React state.
-
-## Learning objectives <a name="objectives"></a>
-
-- Set up a React app.
-- Use React documentation.
+- Handle events in a React app.
+- Use React life cycle methods.
+- Understand the mechanism of lifting state up.
 
 ## 🛠 Built With <a name="built-with"></a>
 - React
