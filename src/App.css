@@ -1,13 +1,11 @@
-
-
 :root {
-  --main-color: rgba(18, 118, 129, 1);
-  --secondary-color: rgba(16, 55, 92, 1);
+  --btn-border: rgb(197, 194, 194);
+  --operator: #ffa600;
   --paragraph-color: rgb(0, 0, 0);
-  --white-color: rgba(255, 255, 255, 1);
+  --bgcolor: #e0e0e0;
   --main-font: "Roboto", sans-serif;
-  --item-color: rgba(217, 214, 221, 0.5);
-  --pop-bg: rgb(51, 48, 48);
+  --bg: #858694;
+  --wrapper-bg: rgba(85, 85, 85, 0.466);
 }
 
 h1 {
@@ -19,10 +17,10 @@ h1 {
 
 .wrapper {
   padding: 80px 10px;
-  background: rgba(85, 85, 85, 0.466);
+  background: var(--wrapper-bg);
   height: 60vh;
   padding-bottom: 20rem;
-} 
+}
 
 /* For calculator */
 .btn_wrapper {
@@ -44,7 +42,7 @@ h1 {
   grid-column: 1/5;
   text-align: right;
   font-size: 30px;
-  background: #858694;
+  background: var(--bg);
   cursor: pointer;
   padding: 10px;
   height: 40px;
@@ -55,7 +53,7 @@ h1 {
 .eigth,
 .twelve {
   grid-column: 1/2;
-  background-color: #e0e0e0;
+  background-color: var(--bgcolor);
 }
 
 .one,
@@ -63,7 +61,7 @@ h1 {
 .nine,
 .thirteen {
   grid-column: 2/3;
-  background-color: #e0e0e0;
+  background-color: var(--bgcolor);
 }
 
 .two,
@@ -72,7 +70,7 @@ h1 {
 .fourteen,
 .eighteen {
   grid-column: 3/4;
-  background-color: #e0e0e0;
+  background-color: var(--bgcolor);
 }
 
 .tree,
@@ -81,18 +79,18 @@ h1 {
 .fifteen,
 .nineteen {
   grid-column: 4/5;
-  background-color: #ffa600;
+  background-color: var(--operator);
 }
 
 .seventeen {
   grid-column: 1/3;
-  background-color: #e0e0e0;
+  background-color: var(--bgcolor);
 }
 
 .btn {
   text-align: center;
   padding: 40px;
   cursor: pointer;
-  border: 0.3px solid rgb(197, 194, 194);
+  border: 0.3px solid var(--btn-border);
   margin-top: -18px;
 }
