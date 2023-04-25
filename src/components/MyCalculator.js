@@ -1,62 +1,85 @@
-/* eslint-disable quotes */
 import React, { useState } from 'react';
-import Buttons from './Button';
+import '../App.css';
+import calculate from '../logic/Calculate';
+import Navigation from './Nav';
 
-function Calculator() {
-  const [displayValue, setDisplayValue] = useState('0');
-
-  const handleClearClick = () => {
-    setDisplayValue('0');
+const Calculator = () => {
+  const [state, setState] = useState({ total: 0, next: null, operation: null });
+  const createEvent = (e) => {
+    const btnName = e.target.innerHTML;
+    const result = calculate(state, btnName);
+    setState(result);
   };
-
-  const handleEqualsClick = () => {
-    // to be implemented in the next project
-  };
-
+  const { total, operation, next } = state;
   return (
-    <div className="calculator">
-      <div className="calculator-display">{displayValue}</div>
-      <div className="calculator-keypad">
-        <div className="calculator-keypad-row">
-          <Buttons title="AC" />
-          <Buttons title="+/-" />
-          <Buttons title="%" />
-          <Buttons cname="btn-color" title="÷" />
+    <section className="calculator">
+      <Navigation />
+      <div className="btn_wrapper">
+        <div className="display">
+          {total}
+          {operation}
+          {next}
         </div>
-        <div className="calculator-keypad-row">
-          <Buttons title="7" />
-          <Buttons title="8" />
-          <Buttons title="9" />
-          <Buttons cname="btn-color" title="X" />
-        </div>
-        <div className="calculator-keypad-row">
-          <Buttons title="4" />
-          <Buttons title="5" />
-          <Buttons title="6" />
-          <Buttons cname="btn-color" title="-" />
-        </div>
-        <div className="calculator-keypad-row">
-          <Buttons title="1" />
-          <Buttons title="2" />
-          <Buttons title="3" />
-          <Buttons cname="btn-color" title="+" />
-        </div>
-        <div className="calculator-keypad-row">
-          <Buttons title="0" />
-          <button id="zero" type="button" onClick={handleClearClick}>
-            C
-          </button>
-          <button
-            className="btn-color"
-            type="submit"
-            onClick={handleEqualsClick}
-          >
-            =
-          </button>
-        </div>
+        <button type="button" className="clearBtn btn" onClick={createEvent}>
+          AC
+        </button>
+        <button type="button" className="negetiveBtn btn" onClick={createEvent}>
+          +/-
+        </button>
+        <button type="button" className="percentBtn btn" onClick={createEvent}>
+          %
+        </button>
+        <button type="button" className="divisionBtn btn" onClick={createEvent}>
+          ÷
+        </button>
+        <button type="button" className="sevenBtn btn" onClick={createEvent}>
+          7
+        </button>
+        <button type="button" className="eightBtn btn" onClick={createEvent}>
+          8
+        </button>
+        <button type="button" className="nineBtn btn" onClick={createEvent}>
+          9
+        </button>
+        <button type="button" className="multiplyBtn btn" onClick={createEvent}>
+          x
+        </button>
+        <button type="button" className="fourBtn btn" onClick={createEvent}>
+          4
+        </button>
+        <button type="button" className="fiveBtn btn" onClick={createEvent}>
+          5
+        </button>
+        <button type="button" className="sixBtn btn" onClick={createEvent}>
+          6
+        </button>
+        <button type="button" className="minusBtn btn" onClick={createEvent}>
+          -
+        </button>
+        <button type="button" className="oneBtn btn" onClick={createEvent}>
+          1
+        </button>
+        <button type="button" className="twoBtn btn" onClick={createEvent}>
+          2
+        </button>
+        <button type="button" className="threeBtn btn" onClick={createEvent}>
+          3
+        </button>
+        <button type="button" className="addBtn btn" onClick={createEvent}>
+          +
+        </button>
+        <button type="button" className="zeroBtn btn" onClick={createEvent}>
+          0
+        </button>
+        <button type="button" className="pointBtn btn" onClick={createEvent}>
+          .
+        </button>
+        <button type="button" className="equalBtn btn" onClick={createEvent}>
+          =
+        </button>
       </div>
-    </div>
+    </section>
   );
-}
+};
 
 export default Calculator;
