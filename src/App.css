@@ -1,3 +1,68 @@
-h1 {
-  color: red;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: rgba(18, 118, 129, 1);
+  --secondary-color: rgba(16, 55, 92, 1);
+  --paragraph-color: rgb(0, 0, 0);
+  --white-color: rgba(255, 255, 255, 1);
+  --main-font: "Roboto", sans-serif;
+  --item-color: rgba(217, 214, 221, 0.5);
+  --pop-bg: rgb(51, 48, 48);
+}
+
+#navSection {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.calculator {
+  background-color: var(--item-color);
+  width: 340px;
+  margin: auto;
+}
+
+.calculator-display {
+  font-size: 2em;
+  text-align: right;
+  color: #fff;
+  background-color: #adada9;
+  padding: 1px;
+  margin-top: 20%;
+}
+
+.calculator-keypad .btn-color {
+  background: #ffa600;
+}
+
+.calculator-keypad button {
+  font-size: 21px;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-right: 1px solid #d1cfcf;
+}
+
+.calculator-keypad #zero {
+  width: 681px;
+}
+
+.calculator-keypad button:hover {
+  background-color: #ddd;
+}
+
+.calculator-keypad button:active {
+  background-color: #ccc;
+}
+
+.calculator-keypad-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d1cfcf;
 }

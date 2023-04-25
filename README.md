@@ -27,7 +27,9 @@
 
 - Make simple calculations.
 - Read a random math-related quote.
-
+- Use React components.
+- Use React props.
+- Use React state.
 
 ## Learning objectives <a name="objectives"></a>
 
