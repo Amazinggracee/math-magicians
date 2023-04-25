@@ -1,11 +1,9 @@
+/* eslint-disable quotes */
 import React, { useState } from 'react';
+import Buttons from './Button';
 
 function Calculator() {
   const [displayValue, setDisplayValue] = useState('0');
-
-  const handleNumberClick = (value) => {
-    setDisplayValue((prevValue) => (prevValue === '0' ? String(value) : prevValue + String(value)));
-  };
 
   const handleClearClick = () => {
     setDisplayValue('0');
@@ -20,82 +18,32 @@ function Calculator() {
       <div className="calculator-display">{displayValue}</div>
       <div className="calculator-keypad">
         <div className="calculator-keypad-row">
-          <button type="button" onClick={() => handleNumberClick('AC')}>
-            AC
-          </button>
-          <button type="button" onClick={() => handleNumberClick('+/-')}>
-            +/-
-          </button>
-          <button type="button" onClick={() => handleNumberClick('%')}>
-            %
-          </button>
-          <button
-            className="btn-color"
-            type="button"
-            onClick={() => handleNumberClick('÷')}
-          >
-            ÷
-          </button>
+          <Buttons title="AC" />
+          <Buttons title="+/-" />
+          <Buttons title="%" />
+          <Buttons cname="btn-color" title="÷" />
         </div>
         <div className="calculator-keypad-row">
-          <button type="button" onClick={() => handleNumberClick(7)}>
-            7
-          </button>
-          <button type="button" onClick={() => handleNumberClick(8)}>
-            8
-          </button>
-          <button type="button" onClick={() => handleNumberClick(9)}>
-            9
-          </button>
-          <button
-            className="btn-color"
-            type="button"
-            onClick={() => handleNumberClick('x')}
-          >
-            x
-          </button>
+          <Buttons title="7" />
+          <Buttons title="8" />
+          <Buttons title="9" />
+          <Buttons cname="btn-color" title="X" />
         </div>
         <div className="calculator-keypad-row">
-          <button type="button" onClick={() => handleNumberClick(4)}>
-            4
-          </button>
-          <button type="button" onClick={() => handleNumberClick(5)}>
-            5
-          </button>
-          <button type="button" onClick={() => handleNumberClick(6)}>
-            6
-          </button>
-          <button
-            className="btn-color"
-            type="button"
-            onClick={() => handleNumberClick('-')}
-          >
-            -
-          </button>
+          <Buttons title="4" />
+          <Buttons title="5" />
+          <Buttons title="6" />
+          <Buttons cname="btn-color" title="-" />
         </div>
         <div className="calculator-keypad-row">
-          <button type="button" onClick={() => handleNumberClick(1)}>
-            1
-          </button>
-          <button type="button" onClick={() => handleNumberClick(2)}>
-            2
-          </button>
-          <button type="button" onClick={() => handleNumberClick(3)}>
-            3
-          </button>
-          <button
-            className="btn-color"
-            type="button"
-            onClick={() => handleNumberClick('+')}
-          >
-            +
-          </button>
+          <Buttons title="1" />
+          <Buttons title="2" />
+          <Buttons title="3" />
+          <Buttons cname="btn-color" title="+" />
         </div>
         <div className="calculator-keypad-row">
-          <button id="zero" type="button" onClick={() => handleNumberClick(0)}>
-            0
-          </button>
-          <button type="button" onClick={handleClearClick}>
+          <Buttons title="0" />
+          <button id="zero" type="button" onClick={handleClearClick}>
             C
           </button>
           <button
