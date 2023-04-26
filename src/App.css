@@ -70,7 +70,7 @@ h1 {
 }
 
 .wrapper {
-  padding: 80px 10px;
+  padding: 10px 10px;
   background: var(--wrapper-bg);
   height: 60vh;
   padding-bottom: 20rem;
