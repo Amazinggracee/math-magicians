@@ -10,8 +10,8 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <Navigation />
       <div className="wrapper">
+        <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/calculator" element={<Calculator />} />
