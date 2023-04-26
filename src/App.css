@@ -1,3 +1,13 @@
+
+body {
+  background-color: var(--bg-white);
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+  min-height: 100vh;
+  text-align: center;
+}
+
 :root {
   --btn-border: rgb(197, 194, 194);
   --operator: #ffa600;
@@ -18,15 +28,15 @@
 }
 
 .nav {
-    display: flex;
+  display: flex;
   flex-direction: row;
 }
 
 .linkClass {
-list-style: none;
-    display: flex;
-    margin: auto;
-    gap: 19px;
+  list-style: none;
+  display: flex;
+  margin: auto;
+  gap: 19px;
 }
 
 .linkClass li {
@@ -37,6 +47,20 @@ list-style: none;
 
 .linkClass #quoteLink {
   border: none;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 5px;
+}
+
+p {
+  display: flex;
+  margin: auto;
+  width: 50vw;
+  padding: 8px;
 }
 
 h1 {
@@ -124,4 +148,10 @@ h1 {
   cursor: pointer;
   border: 0.3px solid var(--btn-border);
   margin-top: -18px;
+}
+
+.footer {
+  display: flex;
+  margin: auto;
+  justify-content: center;
 }
