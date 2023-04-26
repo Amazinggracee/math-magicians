@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css';
 import calculate from '../logic/Calculate';
-import Navigation from './Nav';
 
 const Calculator = () => {
   const [state, setState] = useState({ total: 0, next: null, operation: null });
@@ -13,7 +12,6 @@ const Calculator = () => {
   const { total, operation, next } = state;
   return (
     <section className="calculator">
-      <Navigation />
       <div className="btn_wrapper">
         <div className="display">
           {total}

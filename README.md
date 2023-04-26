@@ -38,6 +38,9 @@
 - Handle events in a React app.
 - Use React life cycle methods.
 - Understand the mechanism of lifting state up.
+- Use the correct React hook when fetching data
+- Connect to an API within a functional component
+- Show different UI outputs depending on the component state
 
 ## 🛠 Built With <a name="built-with"></a>
 - React
