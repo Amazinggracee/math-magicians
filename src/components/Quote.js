@@ -1,44 +1,47 @@
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useEffect, useState } from 'react';
 
-function Quote() {
-  const [quote, setQuote] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
+const Quote = () => {
+  const [quote, setQuote] = useState('');
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios
-      .get('https://api.ninjas.com/quote')
-      .then((response) => {
-        setQuote(response.data);
-        setIsLoading(false);
-      })
-      .catch((error) => {
+    const fetchQuote = async () => {
+      try {
+        const response = await axios.get(
+          'https://api.api-ninjas.com/v1/quotes?category=happiness',
+          {
+            headers: {
+              'X-Api-Key': 'MLitwyLPktsfrqe6cSpdzQ==MYn3WHZYciWuim32',
+            },
+          },
+        );
+        setQuote(response.data[0].quote);
+        setLoading(false);
+      } catch (error) {
+        setLoading(false);
         setError(error.message);
-        setIsLoading(false);
-      });
+      }
+    };
+    fetchQuote();
   }, []);
 
-  if (isLoading) {
-    return <div>Loading...</div>;
+  if (loading) {
+    return <p>Loading...</p>;
   }
 
   if (error) {
     return (
-      <div>
+      <p>
         Error:
         {' '}
         {error}
-      </div>
+      </p>
     );
   }
 
-  return (
-    <div>
-      <h2>Quote of the day:</h2>
-      <p>{quote}</p>
-    </div>
-  );
-}
+  return <p>{quote}</p>;
+};
 
 export default Quote;

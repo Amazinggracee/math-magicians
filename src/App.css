@@ -8,6 +8,37 @@
   --wrapper-bg: rgba(85, 85, 85, 0.466);
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px;
+  align-items: center;
+  width: 100vw;
+}
+
+.nav {
+    display: flex;
+  flex-direction: row;
+}
+
+.linkClass {
+list-style: none;
+    display: flex;
+    margin: auto;
+    gap: 19px;
+}
+
+.linkClass li {
+  border: none;
+  border-right: 1px solid;
+  padding-right: 10px;
+}
+
+.linkClass #quoteLink {
+  border: none;
+}
+
 h1 {
   display: flex;
   align-items: center;

@@ -5,7 +5,7 @@ export default function Navigation() {
   return (
     <nav className="nav">
       <h2>Math Magicians</h2>
-      <ul>
+      <ul className="linkClass">
         <li>
           <Link to="/" className="links">
             Home
@@ -16,7 +16,7 @@ export default function Navigation() {
             Calculator
           </Link>
         </li>
-        <li>
+        <li id="quoteLink">
           <Link to="/quote" className="links">
             Quote
           </Link>
