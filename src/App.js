@@ -3,9 +3,9 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Calculator from './components/MyCalculator';
 import Navigation from './components/Nav';
-import Home from "./components/Home";
-import Quote from "./components/Quote";
-import Footer from "./components/Footer";
+import Home from './components/Home';
+import Quote from './components/Quote';
+import Footer from './components/Footer';
 
 function App() {
   return (
