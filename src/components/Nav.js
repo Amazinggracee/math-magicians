@@ -1,11 +1,27 @@
-import React from 'react';
+import '../App.css';
+import { Link } from 'react-router-dom';
 
-function Navigation() {
+export default function Navigation() {
   return (
-
-    <div id="navSection">
-      <h1>My Calculator</h1>
-    </div>
+    <nav className="nav">
+      <h2>Math Magicians</h2>
+      <ul>
+        <li>
+          <Link to="/" className="links">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/calculator" className="links">
+            Calculator
+          </Link>
+        </li>
+        <li>
+          <Link to="/quote" className="links">
+            Quote
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
-export default Navigation;
