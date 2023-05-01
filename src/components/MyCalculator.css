@@ -1,0 +1,73 @@
+
+/* For calculator */
+.btn_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  width: 370px;
+  gap: 0;
+  padding: 0;
+  margin: auto;
+  justify-content: center;
+}
+
+.calculator-page {
+  display: flex;
+}
+
+.display {
+  grid-column: 1/5;
+  text-align: right;
+  font-size: 30px;
+  background: var(--bg);
+  cursor: pointer;
+  padding: 10px;
+  height: 40px;
+}
+
+.clearBtn,
+.sevenBtn,
+.fourBtn,
+.oneBtn {
+  grid-column: 1/2;
+  background-color: var(--bgcolor);
+}
+
+.negetiveBtn,
+.eightBtn,
+.fiveBtn,
+.twoBtn {
+  grid-column: 2/3;
+  background-color: var(--bgcolor);
+}
+
+.percentBtn,
+.nineBtn,
+.sixBtn,
+.threeBtn,
+.pointBtn {
+  grid-column: 3/4;
+  background-color: var(--bgcolor);
+}
+
+.divisionBtn,
+.multiplyBtn,
+.minusBtn,
+.addBtn,
+.equalBtn {
+  grid-column: 4/5;
+  background-color: var(--operator);
+}
+
+.zeroBtn {
+  grid-column: 1/3;
+  background-color: var(--bgcolor);
+}
+
+.btn {
+  text-align: center;
+  padding: 40px;
+  cursor: pointer;
+  border: 0.3px solid var(--btn-border);
+  margin-top: -18px;
+}
