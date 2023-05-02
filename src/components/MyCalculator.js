@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../App.css';
 import calculate from '../logic/Calculate';
+import './MyCalculator.css';
 
 const Calculator = () => {
   const [state, setState] = useState({ total: 0, next: null, operation: null });
@@ -13,6 +14,7 @@ const Calculator = () => {
   return (
     <section className="calculator">
       <div className="btn_wrapper">
+        <h6>Let us Do some Math!</h6>
         <div className="display">
           {total}
           {operation}

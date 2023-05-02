@@ -41,6 +41,8 @@
 - Use the correct React hook when fetching data
 - Connect to an API within a functional component
 - Show different UI outputs depending on the component state
+- Use React Router.
+- Use styles in a React app.
 
 ## 🛠 Built With <a name="built-with"></a>
 - React
@@ -54,10 +56,20 @@
 
 ### Key Features <a name="key-features"></a>
 
+- [ ] A simple calculator structure
+- [ ] Add Math related quotes
+- [ ] ** API Documentation
+- [ ] ** improve the look and feel of the application
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO AND THE DEPLOY -->
+### Home page
+
+[screenshot for Home screen](./src/img/Home.png) 
+[screenshot for Calculator](./src/img/Calculator.png)
+[screenshot for Calculator](./src/img/quotes.png)
+
 
 ## 🚀 Live Demo and video <a name="live-demo"></a>
 https://amazinggracee.github.io/math-magicians/public
@@ -135,7 +147,10 @@ To get the output of our project make sure you have google Chrome, Mozila or any
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+### Key Features <a name="key-features"></a>
 
+- [ ] Write unit tests with React Testing Library.
+- [ ] Write unit tests with snapshots with Jest.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
