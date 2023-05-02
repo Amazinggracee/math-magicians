@@ -41,6 +41,8 @@
 - Use the correct React hook when fetching data
 - Connect to an API within a functional component
 - Show different UI outputs depending on the component state
+- Use React Router.
+- Use styles in a React app.
 
 ## 🛠 Built With <a name="built-with"></a>
 - React
