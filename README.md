@@ -56,6 +56,10 @@
 
 ### Key Features <a name="key-features"></a>
 
+- [ ] A simple calculator structure
+- [ ] Add Math related quotes
+- [ ] ** API Documentation
+- [ ] ** improve the look and feel of the application
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,7 +141,9 @@ To get the output of our project make sure you have google Chrome, Mozila or any
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+### Key Features <a name="key-features"></a>
 
+- [ ] Add test to make sure that every component is funtioning well.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
