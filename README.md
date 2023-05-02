@@ -149,7 +149,8 @@ To get the output of our project make sure you have google Chrome, Mozila or any
 
 ### Key Features <a name="key-features"></a>
 
-- [ ] Add test to make sure that every component is funtioning well.
+- [ ] Write unit tests with React Testing Library.
+- [ ] Write unit tests with snapshots with Jest.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
