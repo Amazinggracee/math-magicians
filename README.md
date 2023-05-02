@@ -64,6 +64,12 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO AND THE DEPLOY -->
+### Home page
+
+[screenshot for Home screen](./src/img/Home.png) 
+[screenshot for Calculator](./src/img/Calculator.png)
+[screenshot for Calculator](./src/img/quotes.png)
+
 
 ## 🚀 Live Demo and video <a name="live-demo"></a>
 https://amazinggracee.github.io/math-magicians/public
