@@ -1,0 +1,9 @@
+import { render, screen } from '@testing-library/react';
+import Home from '../Home';
+
+describe('Home component', () => {
+  test('renders correctly', () => {
+    const { container } = render(<Home />);
+    expect(container.firstChild).toMatchSnapshot();
+  });
+});
